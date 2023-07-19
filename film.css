@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+::selection {
+    color: gold;
+    background-color: black;
+}
+
+body,
+html {
+    font-family: 'Lobster', cursive;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+nav {
+    background-color: orange;
+    position: sticky;
+    top: 0;
+    scroll-behavior: smooth;
+    z-index: 2;
+    text-align: center;
+}
+
+a {
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    padding: 0 7px;
+    font-size: x-large;
+}
+
+a:hover {
+    text-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.footer {
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    background-color: orange;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    font-size: 10px;
+}
+
+.film {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-left: 140px;
+}
+
+.film1 {
+    background-image: url(walking\ dead.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.film2 {
+    background-image: url(witcher.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.film3 {
+    background-image: url(TRansformers.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.film4 {
+    background-image: url(flash.jpg);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+h3 {
+    color: white;
+    line-height: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-areas:
+        'header header header header '
+        'menu  main main right '
+        'footer footer footer footer';
+    gap: 10px;
+    height: 100%;
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+div {
+    background-color: orangered;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
